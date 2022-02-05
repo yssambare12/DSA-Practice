@@ -1,0 +1,3 @@
+// duplicatearray
+
+// find common eleme
