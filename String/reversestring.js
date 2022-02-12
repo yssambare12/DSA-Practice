@@ -1,4 +1,4 @@
-// You are given a string s. You need to reverse the string.
+// You are given a string s. You need to reverse the string..
 
 var s = "Abcdefg";
 var out = []
