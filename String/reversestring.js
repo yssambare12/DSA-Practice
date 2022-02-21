@@ -2,7 +2,7 @@
 
 var s = "Abcdefg";
 var out = []
-for (var i = s.length-1; i >= 0; i--){
+for (var i = s.length-1; i >= 0; i--){{}
     out.push(s[i])
 }
 
