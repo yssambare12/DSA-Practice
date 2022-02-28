@@ -1,10 +1,6 @@
-const firstorder = () => {
-    console.log("firstor2222222222deer")
-}
+const firstfunction = () => {
+    console.log("first")
+};
 
-const higherorder = a => a();
-higherorder(firstorder);
-
-// const firstOrderFunc = () => console.log ('Hello, I am a First order function');
-// const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc();
-// higherOrder(firstOrderFunc);
+const secondfunction = a => a();
+secondfunction(firstfunction)
