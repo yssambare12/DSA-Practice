@@ -10,4 +10,4 @@ console.log(out.join(" "))
 
 // second way
 
-console.log(s.split('').reverse().join(''))
+
