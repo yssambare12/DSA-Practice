@@ -6,7 +6,7 @@ for (var i = s.length-1; i >= 0; i--){{}
     out.push(s[i])
 }
 
-console.log(out.join(" "))
+console.log(out.join(" ")
 
 // second way
 
