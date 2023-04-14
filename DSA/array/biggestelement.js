@@ -6,7 +6,7 @@
 // if(arr[i] == arr[i+1]){
 //     out = out + "";
 // }else {
-//     out = out + arr[i] + " ";
+//     out = out + arr[i] + " ";:
 // }
 
 // }
