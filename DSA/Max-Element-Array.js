@@ -8,6 +8,6 @@ function findMax(arr) {
   return max;
 }
 
-const numbers = [1, 5, 2, 9, 8];
+const numbers = [1, 5, 2, 9, 8, 10];
 const maxNumber = findMax(numbers);
 console.log("Maximum number:", maxNumber);
