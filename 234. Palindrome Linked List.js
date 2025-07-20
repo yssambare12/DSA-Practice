@@ -31,8 +31,8 @@ var isPalindrome = function (head) {
     fast = fast.next.next;
   }
 
-  let current = slow;
   let prev = null;
+  let current = slow;
 
   while (current != null) {
     let temp = current.next;
@@ -41,15 +41,15 @@ var isPalindrome = function (head) {
     current = temp;
   }
 
-  let firstlist = head;
-  let secondlist = prev;
+  let firstList = head;
+  let secondList = prev;
 
-  while (secondlist != null) {
-    if (firstlist.val != secondlist.val) {
+  while (secondList != null) {
+    if (firstList.val != secondList.val) {
       return false;
     }
-    firstlist = firstlist.next;
-    secondlist = secondlist.next;
+    firstList = firstList.next;
+    secondList = secondList.next;
   }
   return true;
 };
