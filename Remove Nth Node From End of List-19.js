@@ -15,6 +15,27 @@
 function removeNthNode(head, n) {
   let sentinal = new ListNode();
   sentinal.next = head;
+
+  let first = sentinal;
+  for (let i = 0; i < n; i++) {
+    first = first.next;
+  }
+
+  let second = sentinal;
+  while (first.next != null) {
+    first = first.next;
+    second = second.next;
+  }
+
+  second.next = second.next.next;
+
+  return sentinal.next;
+}
+
+//brute force approch == Two pass approch
+function removeNthNode(head, n) {
+  let sentinal = new ListNode();
+  sentinal.next = head;
   let length = 0;
 
   while (head != null) {
