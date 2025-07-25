@@ -32,11 +32,12 @@
 function findMaxFrequency(s) {
   let hash = {};
   for (let i = 0; i < s.length; i++) {
-    if (!hash[s[i]]) {
-      hash[s[i]] = 1;
-    } else {
-      hash[s[i]]++;
-    }
+    hash[s[i]] = !hash[s[i]] ? 1 : hash[s[i]]++;
+    // if (!hash[s[i]]) {
+    //   hash[s[i]] = 1;
+    // } else {
+    //   hash[s[i]]++;
+    // }
   }
 
   let maxvo = 0;
@@ -44,14 +45,16 @@ function findMaxFrequency(s) {
   let vovels = ["a", "e", "i", "o", "u"];
 
   for (let i = 0; i < s.length; i++) {
-    if (vovels.includes([s[i]])) {
-      if (hash[s[i]] > maxvo) {
-        maxvo = hash[s[i]];
-      }
+    if (vovels.includes(s[i])) {
+      maxvo = Math.max(maxvo, hash[s[i]]);
+      //   if (hash[s[i]] > maxvo) {
+      //     maxvo = hash[s[i]];
+      //   }
     } else {
-      if (hash[s[i]] > maxco) {
-        maxco = hash[s[i]];
-      }
+      maxco = Math.max(maxco, hash[s[i]]);
+      //   if (hash[s[i]] > maxco) {
+      //     maxco = hash[s[i]];
+      //   }
     }
   }
 
