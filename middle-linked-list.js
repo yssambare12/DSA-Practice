@@ -29,3 +29,20 @@ function middlelLinkList(head) {
   }
   return slow;
 }
+
+// Time Complexity: O(n)
+
+// Even though there are two nested loops, the overall time complexity is O(n), not O(n^2).
+// Here's why:
+
+// The outer loop runs in steps of 2k (i = i + 2k), so it skips ahead and doesn’t check every index one-by-one.
+// That means it runs approximately n / (2k) times.
+
+// Inside the outer loop, the inner loop runs only up to k/2 times (since we reverse only k characters and swap pairs).
+
+// So, even though it looks like a nested loop,
+// it's not two full loops over 'n' — the inner loop runs a fixed number of times per outer iteration.
+
+// Therefore, the total number of operations across the entire string is proportional to 'n', not n^2.
+
+// That’s why the final time complexity is O(n), not O(n²).
