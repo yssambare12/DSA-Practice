@@ -43,3 +43,6 @@ function groupAnagram(str) {
 
   return [...Object.values(hash)];
 }
+
+// Time complexity = O(m n)
+// Space complexity = O(m n)
