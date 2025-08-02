@@ -18,4 +18,3 @@ function selectionsort(a) {
 let arr = [7, 1, 2, 5, 7, 4, -8, 9, 0];
 
 let result = selectionsort(arr);
-console.log(result);
