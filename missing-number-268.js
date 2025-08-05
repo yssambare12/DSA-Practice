@@ -21,19 +21,15 @@
 
 // n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var missingNumber = function (nums) {
+function missingNumbers(nums) {
   let n = nums.length;
-  let totalsum = (n * (n + 1)) / 2;
+  let totalSum = (n * (n + 1)) / 2;
 
-  let partialsum = 0;
+  let sum = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    partialsum += nums[i];
+  for (let i = 0; i < n; i++) {
+    sum += nums[i];
   }
 
-  return totalsum - partialsum;
-};
+  return totalSum - sum;
+}
