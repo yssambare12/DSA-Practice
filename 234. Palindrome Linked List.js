@@ -56,23 +56,23 @@ var isPalindrome = function (head) {
 
 //brute force approch
 function CheckLiskListPalidromeBR(head) {
-  let arr = [];
-  let current = head;
+  let curr = head;
+  let newArray = [];
 
-  while (current != null) {
-    arr.push(current.val);
-    current = current.next;
+  while (curr != null) {
+    newArray.push(curr.val);
+    curr = curr.next;
   }
 
-  let left = 0;
-  let right = arr.length - 1;
-
-  while (left < right) {
-    if (arr[left] !== arr[right]) {
+  let start = 0;
+  let end = newArray.length - 1;
+  while (start < end) {
+    if (newArray[start] === newArray[end]) {
+      start++;
+      end--;
+    } else {
       return false;
     }
-    left++;
-    right--;
   }
-  return false;
+  return true;
 }
