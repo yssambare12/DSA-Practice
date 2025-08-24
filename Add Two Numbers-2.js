@@ -23,21 +23,21 @@
 // Output: [8,9,9,9,0,0,0,1]
 
 function addTwoNumberLL(l1, l2) {
-  let sum = 0;
+  let ansNode = new ListNode();
+  let ansHead = ansNode;
   let carry = 0;
-  let dummynode = new ListNode();
-  let firstPointStoreNode = dummynode;
 
   while (l1 || l2 || carry) {
-    sum = (!l1 ? 0 : l1.val) + (!l2 ? 0 : l2.val) + carry;
+    let sum = (!l1 ? 0 : l1.val) + (!l2 ? 0 : l2.val) + carry;
     carry = Math.floor(sum / 10);
-    digit = sum % 10;
+    let digit = sum % 10;
 
     let newNode = new ListNode(digit);
-    dummynode.next = newNode;
-    dummynode = dummynode.next;
+    ansNode.next = newNode;
+    ansNode = ansNode.next;
+
     l1 = l1 && l1.next;
     l2 = l2 && l2.next;
   }
-  return firstPointStoreNode.next;
+  return ansHead.next;
 }
