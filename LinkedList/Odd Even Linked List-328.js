@@ -17,18 +17,21 @@
 // Input: head = [1,2,3,4,5]
 // Output: [1,3,5,2,4]
 
-function oddEvenLinedList(head) {
+function oddEvenLinkList(head) {
+  //corner case
   if (!head || !head.next) return head;
-  let odd = head;
-  even = head.next;
-  evenStart = even;
-  while (odd.next && even.next) {
-    odd.next = odd.next.next;
-    even.next = even.next.next;
-    odd = odd.next;
-    even = even.next;
+
+  let oddNode = head;
+  let evenNode = head.next;
+  let evenStart = evenNode;
+
+  while (oddNode.next && evenNode.next) {
+    oddNode.next = oddNode.next.next;
+    evenNode.next = evenNode.next.next;
+    oddNode = oddNode.next;
+    evenNode = evenNode.next;
   }
 
-  odd.next = evenStart;
+  oddNode.next = evenNode;
   return head;
 }
