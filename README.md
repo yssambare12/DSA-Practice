@@ -6,7 +6,7 @@ Welcome to my comprehensive Data Structures and Algorithms practice repository! 
 
 ## 📊 Progress Overview
 
-- **Total Problems Solved**: 50+ problems across multiple categories
+- **Total Problems Solved**: 80+ problems across multiple categories
 - **Target Date**: March 2026
 - **Current Focus**: Building strong foundation in core DSA concepts
 
@@ -104,7 +104,7 @@ Welcome to my comprehensive Data Structures and Algorithms practice repository! 
 - ✅ Master basic array operations
 - ✅ Understand recursion fundamentals
 - ✅ Learn basic sorting algorithms
-- 🔄 Working on linked list operations
+- ✅ Working on linked list operations
 
 ### Phase 2: Intermediate (Upcoming)
 
@@ -130,19 +130,6 @@ Each solution includes:
 - **Space Complexity**: Memory usage analysis
 - **Code Implementation**: Clean, readable JavaScript
 
-### Example Solution Structure:
-
-```javascript
-// Problem: [Problem Name]
-// Difficulty: [Easy/Medium/Hard]
-// Approach: [Algorithm used]
-
-function solutionName(params) {
-  // Implementation with comments
-  return result;
-}
-```
-
 ## 🛠️ Technologies Used
 
 - **Language**: JavaScript (ES6+)
@@ -159,17 +146,18 @@ function solutionName(params) {
 - [x] Basic sorting
 - [x] Two pointers technique
 - [x] Hash map basics
-- [x] Stack operations
+- [x] Stack & Queue operations
 - [x] String manipulation basics
 
 ### In Progress:
 
-- [ ] Advanced linked list problems
-- [ ] Binary search variations
-- [ ] Backtracking algorithms
+- [ ] Sliding Window
 
 ### Upcoming:
 
+- [ ] Advanced linked list problems
+- [ ] Binary search variations
+- [ ] Backtracking algorithms
 - [ ] Tree data structures
 - [ ] Dynamic programming
 - [ ] Graph algorithms
